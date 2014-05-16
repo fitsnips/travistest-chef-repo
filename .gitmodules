@@ -1,0 +1,9 @@
+[submodule "cookbooks/openssh/foodcritic/foodcritic-rules"]
+	path = cookbooks/openssh/foodcritic/foodcritic-rules
+	url = https://github.com/etsy/foodcritic-rules.git
+[submodule "cookbooks/openssh/foodcritic/foodcritic-rules-customink"]
+	path = cookbooks/openssh/foodcritic/foodcritic-rules-customink
+	url = https://github.com/customink-webops/foodcritic-rules.git
+[submodule "cookbooks/openssh/foodcritic/foodcritic-rules-etsy"]
+	path = cookbooks/openssh/foodcritic/foodcritic-rules-etsy
+	url = https://github.com/etsy/foodcritic-rules.git
