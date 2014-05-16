@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
 gem 'rake'
+gem 'chef'
 gem 'foodcritic'
+gem 'rspec'
 gem 'strainer'
