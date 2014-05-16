@@ -5,4 +5,5 @@ rvm:
   - 1.9.3
 #  - 2.1.0
 #script: bundle exec strainer test --except kitchen openssh
-script: bundle exec strainer test openssh
+script: bundle exec strainer test openssh apt iptables
+
