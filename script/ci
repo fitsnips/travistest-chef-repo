@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+set +x
+
+git submodule update --init 2>&1 > /dev/null
+bundle install --quite
+rm -Rf .colander
+strainer test `echo $JOB_NAME | sed 's/_cookbook//'`
