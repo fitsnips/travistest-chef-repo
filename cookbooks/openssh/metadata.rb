@@ -6,3 +6,7 @@ description       "Installs openssh"
 version "1.3.5"
 
 
+
+%w{ apt iptables }.each do |cb|
+  depends cb
+end
