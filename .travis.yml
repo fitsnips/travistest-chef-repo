@@ -1,4 +1,7 @@
 language: ruby
+cache:
+- bundler: true
+- apt: false
 gemfile:
    - Gemfile
 rvm:
