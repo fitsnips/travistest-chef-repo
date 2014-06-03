@@ -1,0 +1,13 @@
+---
+driver:
+  - name: digitalocean
+platforms:
+  - name: ubuntu-12.10
+
+provisioner:
+  name: chef_solo
+
+suites:
+  - name: default
+    run_list:
+    attributes:
