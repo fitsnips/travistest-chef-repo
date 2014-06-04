@@ -1,0 +1,7 @@
+knife digital_ocean droplet create --server-name awesome-vm1.jassinpain.net \
+                                      --image 3100616 \
+                                      --location 4 \
+                                      --size 66 \
+                                      --ssh-keys 152945 \
+                                      --run-list "apt" \
+                                      --solo
