@@ -6,3 +6,6 @@ Gemfile.lock
 # Ignore gem files
 .bundle
 vendor
+
+# chef solo files
+./nodes/
