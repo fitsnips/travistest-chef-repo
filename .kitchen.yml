@@ -1,13 +1,15 @@
 ---
 driver:
-  - name: digitalocean
-platforms:
-  - name: ubuntu-12.10
+  name: digitalocean
 
 provisioner:
   name: chef_solo
 
+platforms:
+  - name: ubuntu-12.04
+
 suites:
   - name: default
     run_list:
+      - recipe[openssh::default]
     attributes:
