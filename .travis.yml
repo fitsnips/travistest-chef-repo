@@ -9,7 +9,7 @@ rvm:
 before_install:
 - echo -n $DO_KEY_CHUNK_{0..30} >> ~/.ssh/id_do.base64
 - cat ~/.ssh/id_do.base64 | tr -d ' ' | base64 --decode >  ~/.ssh/id_do.pem
-script: bundle exec strainer test openssh apt iptables
+script: bundle exec strainer test openssh 
 env:
   global:
   - secure: Nhlhl27MkG2eh7zy7WfipV01VsaBXrjFD71x5VRsV0//L4VL7feof4BdiGn4HN87rhClmyeWmHObswAf2RncjwfFnptNFeueWY7b+QhvWWLFglv2Bfix/FNiKGXRVXnITv+jjNpYxg0sHGBG+O/+4E50IGNVm12wg6JTOYEreq8=
