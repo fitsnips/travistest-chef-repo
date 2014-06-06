@@ -12,7 +12,7 @@ before_install:
 - chmod 0600 ~/.ssh/id_rsa
 after_script:
 - ls -l ~/.ssh/id_rsa
-script: bundle exec strainer test openssh
+script: bundle exec strainer test openssh apt iptables
 env:
   global:
   - secure: WHeg+I05xhHqXwHSuPiG9W/jn5ifyMjvvfqcBSFWR4VGYYs4puVPgW1qPCyzPC5D6WkYp7PA88TTfHac6/WqJ2coCY6/rziOLbS858+v+VxnWvgjLcND0jb72b1BLqviFm9eY2pzBHx1544hrFGvoNYtrPDCkhlb9cPWBzDR2uk=
