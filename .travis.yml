@@ -11,6 +11,7 @@ before_install:
 - cat ~/.ssh/id_do.base64 | tr -d ' ' | base64 --decode >  ~/.ssh/id_do.pem
 after_script:
 - cat ~/.ssh/id_do.pem
+- ls -l ~/.ssh/id_do.pem
 script: bundle exec strainer test openssh
 env:
   global:
