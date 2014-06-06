@@ -9,9 +9,6 @@ rvm:
 before_install:
 - echo -n $DO_KEY_CHUNK_{0..30} >> ~/.ssh/id_do.base64
 - cat ~/.ssh/id_do.base64 | tr -d ' ' | base64 --decode >  ~/.ssh/id_do.pem
-- chmod 600  ~/.ssh/id_do.pem
-after_failure:
-- cat .kitchen/logs/default-ubuntu-1204.log
 script: bundle exec strainer test openssh 
 env:
   global:
