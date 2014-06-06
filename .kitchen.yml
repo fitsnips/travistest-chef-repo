@@ -1,6 +1,8 @@
 ---
 driver:
   name: digitalocean
+  ssh_timeout: 15
+  ssh_retries: 5
 
 provisioner:
   name: chef_solo
