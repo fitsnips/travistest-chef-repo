@@ -5,4 +5,4 @@ travistest-chef-repo
 
 
 testing for travis
-- random failure?
+- random failure or user error
