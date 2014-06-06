@@ -11,6 +11,10 @@ group :unit do
   gem 'chefspec',   '~> 3.1'
 end
 
+group :common_repo do
+  gem 'strainer'
+end
+
 group :kitchen_common do
   gem 'test-kitchen', '~> 1.2'
 end
