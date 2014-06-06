@@ -8,10 +8,10 @@ rvm:
 - 1.9.3
 before_install:
 - echo -n $DO_KEY_CHUNK_{0..30} >> ~/.ssh/id_do.base64
-- cat ~/.ssh/id_do.base64 | tr -d ' ' | base64 --decode >  ~/.ssh/id_do.pem
-- chmod 0600 ~/.ssh/id_do.pem
+- cat ~/.ssh/id_do.base64 | tr -d ' ' | base64 --decode >  ~/.ssh/id_rdio
+- chmod 0600 ~/.ssh/id_rsa
 after_script:
-- ls -l ~/.ssh/id_do.pem
+- ls -l ~/.ssh/id_rsa
 script: bundle exec strainer test openssh
 env:
   global:
