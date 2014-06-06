@@ -2,5 +2,6 @@
 knife test: bundle exec knife cookbook test $COOKBOOK
 foodcritic: bundle exec foodcritic -f FC001,FC002,FC003,FC004,FC005 -I $SANDBOX/foodcritic $SANDBOX/$COOKBOOK
 #chefspec:   bundle exec rspec --color 
-kitchen:    bundle exec kitchen test --destroy=always --log-level=debug
+kitchen:    bundle exec kitchen test --destroy=always 
+# warning debug exposes you api key
 #kitchen:    bundle exec kitchen test --log-level=debug
